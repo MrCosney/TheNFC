@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		444AA4362CFBBCB9003B6CDC /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444AA4352CFBBCB9003B6CDC /* MainContentView.swift */; };
+		444AA43C2CFBDD7A003B6CDC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444AA43B2CFBDD7A003B6CDC /* Extensions.swift */; };
+		44F2611A2CD164840002BCDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F261192CD164840002BCDB /* AppDelegate.swift */; };
+		44F2611C2CD164840002BCDB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F2611B2CD164840002BCDB /* SceneDelegate.swift */; };
+		44F2611E2CD164840002BCDB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F2611D2CD164840002BCDB /* MainViewController.swift */; };
+		44F261232CD164850002BCDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44F261222CD164850002BCDB /* Assets.xcassets */; };
+		44F261262CD164850002BCDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F261242CD164850002BCDB /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		444AA4352CFBBCB9003B6CDC /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
+		444AA43B2CFBDD7A003B6CDC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		44B6DAB32CFBE817002CA1D2 /* AlfaPayNFC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AlfaPayNFC.entitlements; sourceTree = "<group>"; };
+		44F261162CD164840002BCDB /* AlfaPayNFC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlfaPayNFC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44F261192CD164840002BCDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		44F2611B2CD164840002BCDB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		44F2611D2CD164840002BCDB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		44F261222CD164850002BCDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44F261252CD164850002BCDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		44F261272CD164850002BCDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44F261132CD164840002BCDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		444AA4382CFBC498003B6CDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		444AA43D2CFBE487003B6CDC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				44F261192CD164840002BCDB /* AppDelegate.swift */,
+				44F2611B2CD164840002BCDB /* SceneDelegate.swift */,
+				44F261222CD164850002BCDB /* Assets.xcassets */,
+				44F261242CD164850002BCDB /* LaunchScreen.storyboard */,
+				44F261272CD164850002BCDB /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		444AA43E2CFBE492003B6CDC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				444AA43B2CFBDD7A003B6CDC /* Extensions.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		444AA43F2CFBE498003B6CDC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				44F2611D2CD164840002BCDB /* MainViewController.swift */,
+				444AA4352CFBBCB9003B6CDC /* MainContentView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		44F2610D2CD164840002BCDB = {
+			isa = PBXGroup;
+			children = (
+				44F261182CD164840002BCDB /* AlfaPayNFC */,
+				44F261172CD164840002BCDB /* Products */,
+				444AA4382CFBC498003B6CDC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		44F261172CD164840002BCDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44F261162CD164840002BCDB /* AlfaPayNFC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44F261182CD164840002BCDB /* AlfaPayNFC */ = {
+			isa = PBXGroup;
+			children = (
+				44B6DAB32CFBE817002CA1D2 /* AlfaPayNFC.entitlements */,
+				444AA43D2CFBE487003B6CDC /* App */,
+				444AA43F2CFBE498003B6CDC /* Main */,
+				444AA43E2CFBE492003B6CDC /* Resources */,
+			);
+			path = AlfaPayNFC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44F261152CD164840002BCDB /* AlfaPayNFC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44F2612A2CD164850002BCDB /* Build configuration list for PBXNativeTarget "AlfaPayNFC" */;
+			buildPhases = (
+				44F261122CD164840002BCDB /* Sources */,
+				44F261132CD164840002BCDB /* Frameworks */,
+				44F261142CD164840002BCDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlfaPayNFC;
+			packageProductDependencies = (
+			);
+			productName = AlfaPayNFC;
+			productReference = 44F261162CD164840002BCDB /* AlfaPayNFC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44F2610E2CD164840002BCDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					44F261152CD164840002BCDB = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 44F261112CD164840002BCDB /* Build configuration list for PBXProject "AlfaPayNFC" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44F2610D2CD164840002BCDB;
+			packageReferences = (
+			);
+			productRefGroup = 44F261172CD164840002BCDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44F261152CD164840002BCDB /* AlfaPayNFC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44F261142CD164840002BCDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F261262CD164850002BCDB /* LaunchScreen.storyboard in Resources */,
+				44F261232CD164850002BCDB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44F261122CD164840002BCDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				444AA43C2CFBDD7A003B6CDC /* Extensions.swift in Sources */,
+				44F2611E2CD164840002BCDB /* MainViewController.swift in Sources */,
+				44F2611A2CD164840002BCDB /* AppDelegate.swift in Sources */,
+				44F2611C2CD164840002BCDB /* SceneDelegate.swift in Sources */,
+				444AA4362CFBBCB9003B6CDC /* MainContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		44F261242CD164850002BCDB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44F261252CD164850002BCDB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44F261282CD164850002BCDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		44F261292CD164850002BCDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44F2612B2CD164850002BCDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AlfaPayNFC/AlfaPayNFC.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5F47RX5TJK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AlfaPayNFC/App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AlfaPayNFC;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "For scanning tags";
+				INFOPLIST_KEY_NSCameraUsageDescription = "QR-Code scan";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.buddytoyz;
+				PRODUCT_NAME = AlfaPayNFC;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44F2612C2CD164850002BCDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AlfaPayNFC/AlfaPayNFC.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3RK339T35W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AlfaPayNFC/App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AlfaPayNFC;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "For scanning tags";
+				INFOPLIST_KEY_NSCameraUsageDescription = "QR-Code scan";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.buddytoyz.AlfaPayNFC;
+				PRODUCT_NAME = AlfaPayNFC;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44F261112CD164840002BCDB /* Build configuration list for PBXProject "AlfaPayNFC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44F261282CD164850002BCDB /* Debug */,
+				44F261292CD164850002BCDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44F2612A2CD164850002BCDB /* Build configuration list for PBXNativeTarget "AlfaPayNFC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44F2612B2CD164850002BCDB /* Debug */,
+				44F2612C2CD164850002BCDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44F2610E2CD164840002BCDB /* Project object */;
+}
