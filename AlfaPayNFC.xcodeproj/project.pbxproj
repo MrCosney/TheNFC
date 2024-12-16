@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		444AA4362CFBBCB9003B6CDC /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444AA4352CFBBCB9003B6CDC /* MainContentView.swift */; };
 		444AA43C2CFBDD7A003B6CDC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444AA43B2CFBDD7A003B6CDC /* Extensions.swift */; };
+		448B36852D102D4E0075B739 /* WalletController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448B36842D102D4E0075B739 /* WalletController.swift */; };
+		448B36872D102D6F0075B739 /* WalletCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448B36862D102D6F0075B739 /* WalletCustomView.swift */; };
+		448B36892D1037740075B739 /* WalletCardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448B36882D1037740075B739 /* WalletCardButton.swift */; };
+		448B368B2D104D8E0075B739 /* WalletCardStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448B368A2D104D8E0075B739 /* WalletCardStackView.swift */; };
 		44F2611A2CD164840002BCDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F261192CD164840002BCDB /* AppDelegate.swift */; };
 		44F2611C2CD164840002BCDB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F2611B2CD164840002BCDB /* SceneDelegate.swift */; };
 		44F2611E2CD164840002BCDB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F2611D2CD164840002BCDB /* MainViewController.swift */; };
@@ -19,6 +23,10 @@
 /* Begin PBXFileReference section */
 		444AA4352CFBBCB9003B6CDC /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
 		444AA43B2CFBDD7A003B6CDC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		448B36842D102D4E0075B739 /* WalletController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletController.swift; sourceTree = "<group>"; };
+		448B36862D102D6F0075B739 /* WalletCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCustomView.swift; sourceTree = "<group>"; };
+		448B36882D1037740075B739 /* WalletCardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCardButton.swift; sourceTree = "<group>"; };
+		448B368A2D104D8E0075B739 /* WalletCardStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCardStackView.swift; sourceTree = "<group>"; };
 		44B6DAB32CFBE817002CA1D2 /* AlfaPayNFC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AlfaPayNFC.entitlements; sourceTree = "<group>"; };
 		44F261162CD164840002BCDB /* AlfaPayNFC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlfaPayNFC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F261192CD164840002BCDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +84,17 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		448B36832D102D3A0075B739 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				448B36842D102D4E0075B739 /* WalletController.swift */,
+				448B36862D102D6F0075B739 /* WalletCustomView.swift */,
+				448B368A2D104D8E0075B739 /* WalletCardStackView.swift */,
+				448B36882D1037740075B739 /* WalletCardButton.swift */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
 		44F2610D2CD164840002BCDB = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +115,7 @@
 		44F261182CD164840002BCDB /* AlfaPayNFC */ = {
 			isa = PBXGroup;
 			children = (
+				448B36832D102D3A0075B739 /* Wallet */,
 				44B6DAB32CFBE817002CA1D2 /* AlfaPayNFC.entitlements */,
 				444AA43D2CFBE487003B6CDC /* App */,
 				444AA43F2CFBE498003B6CDC /* Main */,
@@ -178,6 +198,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				448B36892D1037740075B739 /* WalletCardButton.swift in Sources */,
+				448B36852D102D4E0075B739 /* WalletController.swift in Sources */,
+				448B36872D102D6F0075B739 /* WalletCustomView.swift in Sources */,
+				448B368B2D104D8E0075B739 /* WalletCardStackView.swift in Sources */,
 				444AA43C2CFBDD7A003B6CDC /* Extensions.swift in Sources */,
 				44F2611E2CD164840002BCDB /* MainViewController.swift in Sources */,
 				44F2611A2CD164840002BCDB /* AppDelegate.swift in Sources */,

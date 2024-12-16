@@ -87,14 +87,14 @@ final class MainContentView: UIView {
     // MARK: - Methods
     
     func setupVideoLayer(with session: AVCaptureSession?) {
+        guard let session else { return }
+
         if let previewLayer {
             scannerContainerView.layer.addSublayer(previewLayer)
             return
         }
         
-        guard let session, previewLayer == nil else { return }
         let previewLayer = AVCaptureVideoPreviewLayer(session: session)
-        
         previewLayer.videoGravity = .resizeAspectFill
         previewLayer.frame = scannerContainerView.bounds
         

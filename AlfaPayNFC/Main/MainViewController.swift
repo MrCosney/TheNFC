@@ -11,8 +11,7 @@ import AVFoundation
 
 final class MainViewController: UIViewController {
     // MARK: - Properties
-    
-    private var NFCReaderSession: NFCNDEFReaderSession?
+
     private var captureSession: AVCaptureSession?
     private let feedbackGenerator: UIImpactFeedbackGenerator = UIImpactFeedbackGenerator(style: .heavy)
     private var textToWriteInTag: String = .empty
@@ -77,65 +76,12 @@ extension MainViewController: AVCaptureMetadataOutputObjectsDelegate {
                     title: "Записать в метку 💾",
                     style: .destructive,
                     handler: { [weak self] _ in
-                        self?.startReaderSession()
+                        self?.pushWalletController()
                     }
                 )
             )
         }
     }
-}
-
-// MARK: - NFCNDEFReaderSessionDelegate
-
-extension MainViewController: NFCNDEFReaderSessionDelegate {
-    func readerSession(_ session: NFCNDEFReaderSession, didDetect tags: [NFCNDEFTag]) {
-        guard let tag = tags.first else { return }
-    
-        session.connect(to: tag) { [weak self] error in
-            guard let self else { return }
-            if error != nil {
-                showErrorAlert(message: String(describing: error))
-                session.invalidate()
-                return
-            }
-            
-            tag.queryNDEFStatus { status, value, error in
-                switch status {
-                case .notSupported:
-                    print("Доступ notSupported")
-                    session.alertMessage = "Не поддерживаем"
-                case .readOnly:
-                    print("Доступ readOnly")
-                    session.alertMessage = "Таг доступен только для записи"
-                case .readWrite:
-                    print("Text to write in tag: \(self.textToWriteInTag)")
-                    let payload = [
-                        NFCNDEFPayload(
-                            format: .nfcWellKnown,
-                            type: "T".data(using: .utf8)!,
-                            identifier: Data.init(count: 0),
-                            payload: self.textToWriteInTag.data(using: .utf8)!
-                        )]
-                    tag.writeNDEF(.init(records: payload)) { error in
-                        if nil != error {
-                            session.alertMessage = String(describing: error?.localizedDescription)
-                        } else {
-                            session.alertMessage = "Текст успешно записан на метку🚀"
-                        }
-                        session.invalidate()
-                    }
-                    
-                @unknown default:
-                    session.alertMessage = "Неизвестная ошибка"
-                    session.invalidate()
-                }
-            }
-        }
-    }
-    
-    func readerSession(_ session: NFCNDEFReaderSession, didDetectNDEFs messages: [NFCNDEFMessage]) {}
-    func readerSessionDidBecomeActive(_ session: NFCNDEFReaderSession) { }
-    func readerSession(_ session: NFCNDEFReaderSession, didInvalidateWithError error: Error) {}
 }
 
 
@@ -160,10 +106,9 @@ private extension MainViewController {
         ]
     }
     
-    func startReaderSession() {
-        NFCReaderSession = NFCNDEFReaderSession(delegate: self, queue: nil, invalidateAfterFirstRead: false)
-        NFCReaderSession?.alertMessage = "Приложите телефон к терминалу 📲"
-        NFCReaderSession?.begin()
+    func pushWalletController() {
+        let walletVC = WalletController(textToWriteInTag: textToWriteInTag)
+        navigationController?.pushViewController(walletVC, animated: true)
     }
     
     func createCaptureSession() {
