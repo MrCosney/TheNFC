@@ -88,6 +88,10 @@ extension WalletController: WalletCustomViewDelegate {
         NFCReaderSession?.alertMessage = "Приложите телефон к терминалу 📲"
         NFCReaderSession?.begin()
     }
+    
+    func handleBalanceButtonTapped() {
+        navigationController?.popToRootViewController(animated: true)
+    }
 }
 
 // MARK: - Private

@@ -9,6 +9,7 @@ import UIKit
 
 protocol WalletCustomViewDelegate: AnyObject {
     func handleWalletButtonTapped()
+    func handleBalanceButtonTapped()
 }
 
 final class WalletCustomView: UIView {
@@ -68,6 +69,7 @@ final class WalletCustomView: UIView {
         
         addSubviews()
         makeConstraints()
+        balanceButton.addTarget(self, action: #selector(handleBalanceButtonTap), for: .touchUpInside)
     }
     
     required init?(coder: NSCoder) {
@@ -83,6 +85,12 @@ final class WalletCustomView: UIView {
 // MARK: - Private
 
 private extension WalletCustomView {
+    
+    @objc
+    func handleBalanceButtonTap() {
+        delegate?.handleBalanceButtonTapped()
+    }
+    
     func addSubviews() {
         layer.addSublayer(gradientLayer)
         addSubview(logoImageView)
