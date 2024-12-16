@@ -13,6 +13,7 @@
 		448B36872D102D6F0075B739 /* WalletCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448B36862D102D6F0075B739 /* WalletCustomView.swift */; };
 		448B36892D1037740075B739 /* WalletCardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448B36882D1037740075B739 /* WalletCardButton.swift */; };
 		448B368B2D104D8E0075B739 /* WalletCardStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448B368A2D104D8E0075B739 /* WalletCardStackView.swift */; };
+		448B368D2D105B8D0075B739 /* success.wav in Resources */ = {isa = PBXBuildFile; fileRef = 448B368C2D105B8D0075B739 /* success.wav */; };
 		44F2611A2CD164840002BCDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F261192CD164840002BCDB /* AppDelegate.swift */; };
 		44F2611C2CD164840002BCDB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F2611B2CD164840002BCDB /* SceneDelegate.swift */; };
 		44F2611E2CD164840002BCDB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F2611D2CD164840002BCDB /* MainViewController.swift */; };
@@ -27,6 +28,7 @@
 		448B36862D102D6F0075B739 /* WalletCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCustomView.swift; sourceTree = "<group>"; };
 		448B36882D1037740075B739 /* WalletCardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCardButton.swift; sourceTree = "<group>"; };
 		448B368A2D104D8E0075B739 /* WalletCardStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCardStackView.swift; sourceTree = "<group>"; };
+		448B368C2D105B8D0075B739 /* success.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = success.wav; sourceTree = "<group>"; };
 		44B6DAB32CFBE817002CA1D2 /* AlfaPayNFC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AlfaPayNFC.entitlements; sourceTree = "<group>"; };
 		44F261162CD164840002BCDB /* AlfaPayNFC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlfaPayNFC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F261192CD164840002BCDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 		444AA43E2CFBE492003B6CDC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				448B368C2D105B8D0075B739 /* success.wav */,
 				444AA43B2CFBDD7A003B6CDC /* Extensions.swift */,
 			);
 			path = Resources;
@@ -115,11 +118,11 @@
 		44F261182CD164840002BCDB /* AlfaPayNFC */ = {
 			isa = PBXGroup;
 			children = (
-				448B36832D102D3A0075B739 /* Wallet */,
 				44B6DAB32CFBE817002CA1D2 /* AlfaPayNFC.entitlements */,
 				444AA43D2CFBE487003B6CDC /* App */,
 				444AA43F2CFBE498003B6CDC /* Main */,
 				444AA43E2CFBE492003B6CDC /* Resources */,
+				448B36832D102D3A0075B739 /* Wallet */,
 			);
 			path = AlfaPayNFC;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44F261262CD164850002BCDB /* LaunchScreen.storyboard in Resources */,
+				448B368D2D105B8D0075B739 /* success.wav in Resources */,
 				44F261232CD164850002BCDB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
